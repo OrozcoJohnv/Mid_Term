@@ -100,8 +100,22 @@
             color: #5548a1;
         }
 
+        .profiles {
+            display: flex;
+            gap: 28px;
+            margin-bottom: 35px;
+        }
+
+        .profiles img {
+            width: 125px;
+            height: 125px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #23299c;
+        }
+
         .description {
-            max-width: 750px;
+            max-width: 850px;
             font-size: 18px;
             line-height: 1.6;
             margin-bottom: 30px;
@@ -117,6 +131,18 @@
             border-radius: 30px;
             font-weight: bold;
             transition: 0.3s;
+        }
+
+        .learn-more:hover {
+            background-color: #5633cc;
+        }
+
+        footer {
+            background-color: #141764;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            font-size: 14px;
         }
 
         @media (max-width: 700px) {
@@ -151,19 +177,15 @@
     <header>
 
         <div class="top-header">
-
-
             <img src="logo.png" class="logo" alt="Logo">
-
             <div class="brand">
                 OROZCO CREATIVES
             </div>
-
         </div>
 
         <nav>
-            <a href="index2.html">HOME</a>
-            <a href="about.html" class="active">ABOUT</a>
+            <a href="index2.html" class="active">HOME</a>
+            <a href="about.html">ABOUT</a>
             <a href="gallery.html">GALLERY</a>
             <a href="contact.html">CONTACT</a>
         </nav>
@@ -175,17 +197,35 @@
 
         <section class="hero">
 
-            <h1>CREATIVE BACKGROUND</h1>
+            <h1>EXPERIENCE THE CREATIVE</h1>
 
             <h2>
-                Bringing ideas to life through deliberate, high-impact design.
+                Crafting beauty through intentional design.
             </h2>
 
 
+            <div class="profiles">
+
+                <img src="photo.jpg" alt="Creative Image 1">
+
+                <img src="photo2.jpg" alt="Creative Image 2">
+
+                <img src="photo3.jpg" alt="Creative Image 3">
+
+            </div>
+
+
             <p class="description">
-                I build meaningful visual experiences by balancing and strategy with minimalistic aesthetics. Every
-                detail is deliberate, ensuring my brand isn’t just seen, but remembered.
+                Hello welcome to Orozco Creatives, a design studio dedicated to crafting beauty through intentional
+                design.
+                From branding to digital experiences, we bring ideas to life with precision and creativity.
+                Explore our portfolio and discover how we can transform your vision into reality.
             </p>
+
+
+            <a href="about.html" class="learn-more">
+                LEARN MORE
+            </a>
 
         </section>
 
